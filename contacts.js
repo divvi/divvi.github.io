@@ -24,24 +24,24 @@ var contactsApp = angular.module('myblog',['ngRoute']);
 contactsApp.config(function($routeProvider){
 	$routeProvider.
 	when('/', {
-            template: '<ul><li>Test}</li><ul>',
+            template: '<ul><li>Test</li><ul>',
             controller: 'HomePageCtrl'
           }).
 when('/contactme', {
 template:'<h1>Test</h1>',
-controller:'contactsdetailsctrl',
+controller:'ContactDetailsController',
 }).
 otherwise({
 redirectTo:'/'
 });
 });
 
-contactsApp.controller('HomePageCtrl',function($scope,$http){
-	console.log($routeParams);
+contactsApp.controller('HomePageCtrl',function(){
+	console.log('hello');
 });
 
-contactsApp.controller('contactsdetailsctrl',function($scope,$http){
-	console.log($routeParams);
+contactsApp.controller('ContactDetailsController',function(){
+	console.log('contact details');
 });
 
 
