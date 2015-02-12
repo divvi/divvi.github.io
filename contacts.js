@@ -24,11 +24,17 @@ var contactsApp = angular.module('myblog',['ngRoute']);
 contactsApp.config(function($routeProvider){
 	$routeProvider.
 	when('/', {
-            template: '<ul><li>Test</li><ul>',
+            templateUrl: 'myblog.html/aboutme',
             controller: 'HomePageCtrl'
           }).
+
+when('/resume', {
+templateUrl:'myresume.html',
+controller:'ResumeController',
+}).
+
 when('/contactme', {
-template:'<h1>Test</h1>',
+templateUrl:'contactme.html',
 controller:'ContactDetailsController',
 }).
 otherwise({
@@ -38,6 +44,11 @@ redirectTo:'/'
 
 contactsApp.controller('HomePageCtrl',function(){
 	console.log('hello');
+});
+
+
+contactsApp.controller('ResumeController',function(){
+	console.log('Resume details');
 });
 
 contactsApp.controller('ContactDetailsController',function(){
