@@ -24,7 +24,7 @@ var contactsApp = angular.module('myblog',['ngRoute']);
 contactsApp.config(function($routeProvider){
 	$routeProvider.
 	when('/', {
-            templateUrl: 'myblog.html/aboutme',
+            templateUrl: 'aboutme.html',
             controller: 'HomePageCtrl'
           }).
 
