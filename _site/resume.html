@@ -1,0 +1,65 @@
+
+<!--  
+<div ng-controller="AccordionDemoCtrl">
+  
+
+  
+  <accordion close-others="oneAtATime">
+    <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+      This content is straight in the template.
+    </accordion-group>
+    <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+      {{group.content}}
+    </accordion-group>
+    <accordion-group heading="Dynamic Body Content">
+      <p>The body of the accordion group grows to fit the contents</p>
+        <button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
+        <div ng-repeat="item in items">{{item}}</div>
+    </accordion-group>
+    <accordion-group is-open="status.open">
+        <accordion-heading>
+            I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+        </accordion-heading>
+        This is just some content to illustrate fancy headings.
+    </accordion-group>
+  </accordion>
+</div>
+
+-->
+<div class="container">
+
+	<div class="nav">
+		<a href="javascript:jQuery('#qualifications').scrollTop()" class="scroll">section
+			one</a> <a href="jQuery('#work').scrollTop()" class="scroll">section two</a> <a
+			href="jQuery('#skills').scrollTop();" class="scroll">section three</a>
+	</div>
+	<section id="qualifications">
+		<div>
+			<p>qulifications</p>
+			<br> <br> <br>
+		</div>
+	</section>
+
+
+	<section id="work">
+		<div>
+			<p>work</p>
+			<br> <br> <br>
+		</div>
+	</section>
+
+
+	<section id="skills">
+		<div>
+			<p>skills</p>
+			<br> <br> <br>
+		</div>
+	</section>
+
+
+</div>
+
+
+
+
+

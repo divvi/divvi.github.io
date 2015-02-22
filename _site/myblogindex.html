@@ -1,0 +1,50 @@
+
+<html ng-app="myblog">
+<head>
+<title>my blog</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="myblogstyle.css" rel="stylesheet">
+<link.
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,700,800,400'
+	rel='stylesheet' type='text/css'>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+<script type="text/javascript"
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.js"></script>
+<script type="text/javascript"
+	src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular-route.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.min.js"></script>
+<script src="contacts.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<img src="mypic.png" height="250" width="250">
+		<!--class="img-circle"-->
+		<h1>Divya's Blog</h1>
+		<ul>
+			<li><a href="#/aboutme">About Me</a></li>
+			<li><a href="#/resume">My Resume</a></li>
+			<li><a href="#/contactme" id="contactinfo">Contact Me</a></li>
+		</ul>
+	</header>
+	<!--<div>
+<article>
+This is Divya, an IT graduate and an aspiring Front end Developer based in Sydney.
+This is my portfolio.
+</article>
+</div>-->
+	<div style="border: 1px red solid; width: 600px; height: 400px" ng-view></div>
+</body>
+
+</html>
