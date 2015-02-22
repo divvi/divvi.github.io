@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body>
+    <div class="jumbotron">
+ 
+ <img src="mypic.png" class="img-responsive" height=200 width=200>
+  <h1>Hello, world!</h1>
+  <p>...</p>
+ 
+ </div>
+
+ <div class="container">
+  <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="tablist" id="myTab">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#about" aria-controls="profile" role="tab" data-toggle="tab">About</a></li>
+    <li role="presentation"><a href="#resume" aria-controls="messages" role="tab" data-toggle="tab">Resume</a></li>
+    <li role="presentation"><a href="#contactme" aria-controls="settings" role="tab" data-toggle="tab">Contact</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home"><h1>Home Page</h1></div>
+    <div role="tabpanel" class="tab-pane" id="about"> aboutme</div>
+    <div role="tabpanel" class="tab-pane" id="resume">
+
+<!-- resume nav tabs-->
+ <ul class="nav nav-pills" role="tablist" id="myTab">
+    <li role="presentation" class="active"><a href="#resume" aria-controls="home" role="tab" data-toggle="tab">work</a></li>
+    <li role="presentation"><a href="#resume" aria-controls="profile" role="tab" data-toggle="tab">skills</a></li>
+    <li role="presentation"><a href="#resume" aria-controls="messages" role="tab" data-toggle="tab">qualfications</a></li>
+    <li role="presentation"><a href="#resume" aria-controls="settings" role="tab" data-toggle="tab">acheivements</a></li>
+  </ul>
+
+<!--  resume Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="work"><h1>work experience</h1></div>
+    <div role="tabpanel" class="tab-pane" id="skills"> <h1>skills</h1></div>
+    <div role="tabpanel" class="tab-pane" id="qualifications"><h1>qualifications</h1></div>
+
+    <div role="tabpanel" class="tab-pane" id="acheivements"> <h1>acheivements</h1></div>
+
+    </div>
+
+</div> 
+
+
+
+    <div role="tabpanel" class="tab-pane" id="contactme"> email:gdivyareddy@gmail.com</div>
+  </div>
+
+</div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script defer="defer">
+  jQuery(function () {
+    jQuery('#myTab a:last').tab('show')
+  })
+</script>
+  </body>
+</html>
