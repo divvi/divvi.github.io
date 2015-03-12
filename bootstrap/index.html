@@ -8,6 +8,9 @@
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+ <link href="assets/css/main.css" rel="stylesheet">
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,700,800,400'
+  rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,14 +26,14 @@
  <div class="container">
     <div class="jumbotron">
  
- <img src="../mypic.png" class="img-responsive" height=200 width=200>
+ <img src="../divvi.jpg" class="img-responsive img-circle " height=200 width=200>
   <h1>Divya Gaddam</h1>
   <p>Hello, I'm Divya. I'm a computer science post graduate looking to work in the exciting and challenging world  of web.</p>
  
  </div>
-  <div role="tabpanel">
+  <div role="tabpanel" >
 
-  <!-- Nav tabs -->
+  <!--Main  Nav tabs -->
   <ul class="nav nav-pills" role="tablist" id="myTab">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
     <li role="presentation"><a href="#about" aria-controls="profile" role="tab" data-toggle="tab">About</a></li>
@@ -38,18 +41,19 @@
     <li role="presentation"><a href="#contactme" aria-controls="settings" role="tab" data-toggle="tab">Contact</a></li>
   </ul>
 
-  <!-- Tab panes -->
+  <!-- Main Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home"><h1>Home Page</h1></div>
-    <div role="tabpanel" class="tab-pane" id="about"> aboutme</div>
+    <div role="tabpanel" class="tab-pane" id="about"> About me</div>
     <div role="tabpanel" class="tab-pane" id="resume">
 
 <!-- resume nav tabs-->
- <ul class="nav nav-pills" role="tablist" id="myTab">
+<div>
+ <ul class="nav nav-pills" role="tablist" id="myTab1">
     <li role="presentation" class="active"><a href="#resume" aria-controls="home" role="tab" data-toggle="tab">work</a></li>
-    <li role="presentation"><a href="#resume" aria-controls="profile" role="tab" data-toggle="tab">skills</a></li>
-    <li role="presentation"><a href="#resume" aria-controls="messages" role="tab" data-toggle="tab">qualfications</a></li>
-    <li role="presentation"><a href="#resume" aria-controls="settings" role="tab" data-toggle="tab">acheivements</a></li>
+    <li role="presentation"><a href="#skills" aria-controls="profile" role="tab" data-toggle="tab">skills</a></li>
+    <li role="presentation"><a href="#qualifications" aria-controls="messages" role="tab" data-toggle="tab">qualfications</a></li>
+    <li role="presentation"><a href="#achievements" aria-controls="settings" role="tab" data-toggle="tab">achievements</a></li>
   </ul>
 
 <!--  resume Tab panes -->
@@ -58,15 +62,16 @@
     <div role="tabpanel" class="tab-pane" id="skills"> <h1>skills</h1></div>
     <div role="tabpanel" class="tab-pane" id="qualifications"><h1>qualifications</h1></div>
 
-    <div role="tabpanel" class="tab-pane" id="acheivements"> <h1>acheivements</h1></div>
-
+    <div role="tabpanel" class="tab-pane" id="achievements"> <h1>achievements</h1></div>
+</div>
     </div>
 
 </div> 
 
 
 
-    <div role="tabpanel" class="tab-pane" id="contactme"> email:gdivyareddy@gmail.com</div>
+    <div role="tabpanel" class="tab-pane" id="contactme"><p style="margin-top:100px">email:gdivyareddy@gmail.com</p>
+  </div>
   </div>
 
 </div>
@@ -81,7 +86,7 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script defer="defer">
   jQuery(function () {
-    jQuery('#myTab a:last').tab('show')
+    jQuery('#myTab a:first').tab('show')
   })
 </script>
   </body>
